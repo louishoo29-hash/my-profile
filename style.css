@@ -1,0 +1,221 @@
+/* GENERAL PAGE STYLE */
+
+body {
+  background-color: #F3EFE8;
+  color: #293B49;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+  margin: 0;
+  padding: 45px 0;
+}
+
+/* HEADER */
+
+header {
+  width: 88%;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.intro-label {
+  color: #AD5738;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h1 {
+  color: #243B4A;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 8px 0 35px;
+}
+
+/* TEXT */
+
+h2 {
+  color: #243B4A;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 18px;
+}
+
+p {
+  color: #59636A;
+  margin: 0 0 14px;
+}
+
+strong {
+  color: #AD5738;
+  font-weight: 700;
+}
+
+a {
+  color: #345B75;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #AD5738;
+}
+
+/* MAIN CONTENT */
+
+main {
+  width: 88%;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* CARDS */
+
+.card {
+  background-color: #FFFDFA;
+  padding: 32px;
+  margin: 22px 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(36, 59, 74, 0.06);
+}
+
+/* ABOUT ME */
+
+.about-card {
+  background-color: #243B4A;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 36px;
+}
+
+.about-photo {
+  width: 160px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #FFF9F0;
+  font-size: 28px;
+}
+
+.about-text p {
+  color: #E0E6E9;
+}
+
+.about-text strong {
+  color: #F0B58D;
+}
+
+/* LISTS */
+
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 0 22px;
+}
+
+/* INTERESTS */
+
+.interest-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interest-list li,
+.journey-list li {
+  padding: 14px 0;
+}
+
+.interest-link,
+.journey-list strong {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.interest-list p,
+.journey-list p {
+  margin: 6px 0;
+}
+
+/* CONTACT */
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  padding: 8px 0;
+}
+
+.contact-list i {
+  color: #AD5738;
+  margin: 0 8px 0 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 760px) {
+  .card {
+    padding: 26px;
+  }
+
+  .about-card {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 28px 0;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin: 8px 0 25px;
+  }
+
+  .card {
+    padding: 24px;
+    margin: 18px 0;
+  }
+
+  .about-card {
+    flex-direction: column;
+    padding: 30px 24px;
+  }
+
+  .about-photo {
+    width: 140px;
+  }
+
+  .about-text h2,
+  .about-text p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    padding: 18px;
+  }
+
+  .contact-list {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+}
